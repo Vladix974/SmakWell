@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SmakWell</string>
+    <string name="produccia">НАША ПРОДУКЦІЯ</string>
+    <string name="benderyky">Бендерики</string>
+    <string name="mlunci">Млинці</string>
+    <string name="varenyky">Вареники</string>
+    <string name="khinkali">Хінкалі</string>
+    <string name="kotletu">Котлети</string>
+    <string name="schnitzel">Шніцель</string>
+    <string name="syrniki">Сирники</string>
+    <string name="chebureki">Чебуреки</string>
+    <string name="cabbage">Голубці</string>
+    <string name="dumplings">Пельмені</string>
+    <string name="lula_cebab">Люля-Кебаб</string>
+    <string name="kushtuvav">НАЙСМАЧНІШЕ ЩО ТИ КУШТУВАВ</string>
+    <string name="slogan">СМАЧНА ЕКОНОМІЯ ЧАСУ!</string>
+</resources>
