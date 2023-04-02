@@ -15,40 +15,37 @@ class RootFragment :Fragment(R.layout.fragment_root){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentRootBinding.bind(view)
-
-        adapterBake = Baking_Adapter { bake->
+        adapterBake = Baking_Adapter {name, descr->
             findNavController().navigate(R.id.action_rootFragment_to_descriptionFragment,
-                bundleOf(DescriptionFragment.NAME_BAKE to bake)
+                bundleOf(DescriptionFragment.NAME_BAKE to name,DescriptionFragment.DESCR_BAKE to descr)
             )
-
         }
-
         adapterBake.addBakes(createBaking())
         binding.apply {
-          //  rcBaking.layoutManager = GridLayoutManager(this@RootFragment,2)
             rcBaking.adapter=adapterBake
         }
         binding.apply {
 
         }
     }
-    private fun openDescriptionFragment(name : String){
+
+    private fun openDescr(name: String ){
 
     }
 
     fun createBaking(): List<Baking>{
         return listOf(
-            Baking(getString(R.string.benderyky),R.drawable.benderuku),
-            Baking(getString(R.string.mlunci),R.drawable.mlunci),
-            Baking(getString(R.string.varenyky),R.drawable.varenyky),
-            Baking(getString(R.string.khinkali),R.drawable.khinkali),
-            Baking(getString(R.string.kotletu),R.drawable.kotletu),
-            Baking(getString(R.string.schnitzel),R.drawable.schnitzel),
-            Baking(getString(R.string.syrniki),R.drawable.syrniki),
-            Baking(getString(R.string.chebureki),R.drawable.chebureki),
-            Baking(getString(R.string.cabbage),R.drawable.cabbage),
-            Baking(getString(R.string.dumplings),R.drawable.dumplings),
-            Baking(getString(R.string.lula_cebab),R.drawable.lula_cebab)
+            Baking(getString(R.string.benderyky),R.drawable.benderuku,getString(R.string.bend_descr),R.drawable.benderyky_decription),
+            Baking(getString(R.string.mlunci),R.drawable.mlunci,getString(R.string.mlunci_descr),R.drawable.benderyky_decription),
+            Baking(getString(R.string.varenyky),R.drawable.varenyky,getString(R.string.bend_descr),R.drawable.benderyky_decription),
+            Baking(getString(R.string.khinkali),R.drawable.khinkali,getString(R.string.bend_descr),R.drawable.benderyky_decription),
+            Baking(getString(R.string.kotletu),R.drawable.kotletu,getString(R.string.bend_descr),R.drawable.benderyky_decription),
+            Baking(getString(R.string.schnitzel),R.drawable.schnitzel,getString(R.string.bend_descr),R.drawable.benderyky_decription),
+            Baking(getString(R.string.syrniki),R.drawable.syrniki,getString(R.string.bend_descr),R.drawable.benderyky_decription),
+            Baking(getString(R.string.chebureki),R.drawable.chebureki,getString(R.string.bend_descr),R.drawable.benderyky_decription),
+            Baking(getString(R.string.cabbage),R.drawable.cabbage,getString(R.string.bend_descr),R.drawable.benderyky_decription),
+            Baking(getString(R.string.dumplings),R.drawable.dumplings,getString(R.string.bend_descr),R.drawable.benderyky_decription),
+            Baking(getString(R.string.lula_cebab),R.drawable.lula_cebab,getString(R.string.bend_descr),R.drawable.benderyky_decription)
         )
 
 }

@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.smakwell.databinding.BakingItemBinding
-
-class Baking_Adapter(val onClick: (model: Baking)-> Unit
+//(val onClick: (name: String, img:Int, descr: String )-> Unit
+//)
+class Baking_Adapter(
+    val onClick: (name: String, descr: String)->Unit
 ):RecyclerView.Adapter<Baking_Adapter.BakingHolder>() {
 
     private val List= ArrayList<Baking>()
@@ -18,8 +20,9 @@ class Baking_Adapter(val onClick: (model: Baking)-> Unit
         fun bind (bake:Baking) = with(binding){
             tvNameBaking.text=bake.name
             imgBaking.setImageResource(bake.img)
+
             cvItem.setOnClickListener{
-               onClick(bake)
+               onClick(bake.name,bake.desr)
             }
         }
 

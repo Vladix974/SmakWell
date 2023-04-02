@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context="com.example.smakwell.RootFragment"
-    android:id="@+id/fragmentConteiner"
     >
 
 
@@ -69,4 +68,5 @@
         app:spanCount="2"
         tools:itemCount="4"
         tools:listitem="@layout/baking_item" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
