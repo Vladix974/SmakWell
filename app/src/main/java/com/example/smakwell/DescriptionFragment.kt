@@ -13,10 +13,14 @@ class DescriptionFragment : Fragment(R.layout.fragmet_description) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmetDescriptionBinding.bind(view)
-        binding.btnBack.setOnClickListener {
-            findNavController().popBackStack()
+        binding.apply {
+            btnBack.setOnClickListener {
+                findNavController().popBackStack()
+            }
+            imglogo.setOnClickListener{
+                findNavController().popBackStack()
+            }
         }
-
         Glide.with(binding.root)
             .load(R.drawable.logo)
             .centerCrop()
