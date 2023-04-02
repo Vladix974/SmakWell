@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context="com.example.smakwell.RootFragment"
+    android:id="@+id/fragmentConteiner"
     >
 
 
@@ -64,6 +65,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
         tools:itemCount="4"
         tools:listitem="@layout/baking_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>

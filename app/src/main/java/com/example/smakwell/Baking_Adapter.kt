@@ -7,15 +7,20 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.smakwell.databinding.BakingItemBinding
 
-class Baking_Adapter:RecyclerView.Adapter<Baking_Adapter.BakingHolder>() {
-    val List= ArrayList<Baking>()
+class Baking_Adapter(val onClick: (model: Baking)-> Unit
+):RecyclerView.Adapter<Baking_Adapter.BakingHolder>() {
 
-    class BakingHolder(item: View): RecyclerView.ViewHolder(item){
+    private val List= ArrayList<Baking>()
+
+   inner class BakingHolder(item: View): RecyclerView.ViewHolder(item){
         val binding = BakingItemBinding.bind(item)
 
         fun bind (bake:Baking) = with(binding){
             tvNameBaking.text=bake.name
             imgBaking.setImageResource(bake.img)
+            cvItem.setOnClickListener{
+               onClick(bake)
+            }
         }
 
     }
