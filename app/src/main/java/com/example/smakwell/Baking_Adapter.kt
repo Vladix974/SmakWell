@@ -5,24 +5,28 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.smakwell.databinding.BakingItemBinding
-//(val onClick: (name: String, img:Int, descr: String )-> Unit
-//)
+
 class Baking_Adapter(
-    val onClick: (name: String, descr: String)->Unit
+    val onClick: (bake: Baking)->Unit
 ):RecyclerView.Adapter<Baking_Adapter.BakingHolder>() {
 
-    private val List= ArrayList<Baking>()
+    private val list= ArrayList<Baking>()
 
    inner class BakingHolder(item: View): RecyclerView.ViewHolder(item){
         val binding = BakingItemBinding.bind(item)
 
         fun bind (bake:Baking) = with(binding){
             tvNameBaking.text=bake.name
-            imgBaking.setImageResource(bake.img)
+            val url = bake.img
+            Glide.with(binding.root)
+                .load(url)
+                .centerCrop()
+                .into(imgBaking)
 
             cvItem.setOnClickListener{
-               onClick(bake.name,bake.desr)
+               onClick(list[adapterPosition])
             }
         }
 
@@ -34,15 +38,15 @@ class Baking_Adapter(
     }
 
     override fun getItemCount(): Int {
-       return List.size
+       return list.size
     }
 
     override fun onBindViewHolder(holder: BakingHolder, position: Int) {
-        holder.bind(List[position])
+        holder.bind(list[position])
     }
     fun addBakes(newList:List<Baking>){
-        List.clear()
-        List.addAll(newList)
+        list.clear()
+        list.addAll(newList)
         notifyDataSetChanged()
     }
 }

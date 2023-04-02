@@ -9,15 +9,16 @@ class DescriptionFragment : Fragment(R.layout.fragmet_description) {
     lateinit var binding: FragmetDescriptionBinding
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-      binding = FragmetDescriptionBinding.bind(view)
+        binding = FragmetDescriptionBinding.bind(view)
 
-            binding.apply {
-           tvNameBaking.text = requireArguments().getString(NAME_BAKE)
-           tvDescription.text = requireArguments().getString(DESCR_BAKE)
+        val bake = requireArguments().getParcelable<Baking>(BAKE)
+        binding.apply {
+            tvNameBaking.text = bake?.name
+            tvDescription.text = bake?.desr
         }
     }
-    companion object{
-        const val NAME_BAKE = "name"
-        const val DESCR_BAKE = "descr"
+
+    companion object {
+        const val BAKE = "bake"
     }
-    }
+}

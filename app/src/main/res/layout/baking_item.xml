@@ -16,14 +16,14 @@
             android:layout_height="wrap_content"
             android:background="@color/black">
 
-        <ImageView
-            android:id="@+id/img_baking"
-            android:layout_width="210dp"
-            android:layout_height="200dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/benderuku" />
+            <ImageView
+                android:id="@+id/img_baking"
+                android:layout_width="185dp"
+                android:layout_height="160dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/benderuku" />
 
             <TextView
                 android:id="@+id/tvNameBaking"
