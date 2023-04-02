@@ -8,5 +8,5 @@ data class Baking(
     val name: String,
     val img: String,
     val desr: String,
-    val img2: Int
+    val img2: String
 ):Parcelable

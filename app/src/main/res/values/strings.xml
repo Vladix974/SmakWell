@@ -16,16 +16,27 @@
     <string name="slogan">СМАЧНА ЕКОНОМІЯ ЧАСУ!</string>
     <string name="imglogo">https://www.smakwell.com/img/pages/main_page/logo.svg</string>
     <string name="imgBenderuku">https://www.smakwell.com/img/pages/main_page/categories_icon/benderiki.png</string>
+    <string name="imgBenderuku2">https://www.smakwell.com/img/pages/benderiki_page/plate_benderiki.png</string>
     <string name="imgLula_cebab">https://www.smakwell.com/img/pages/main_page/categories_icon/lula-kebab.png</string>
+    <string name="imgLula_cebab2">https://www.smakwell.com/img/pages/lula-kebab_page/plate_lula-kebab.png</string>
     <string name="imgDumplings">https://www.smakwell.com/img/pages/main_page/categories_icon/dumplings.png</string>
+    <string name="imgDumplings2">https://www.smakwell.com/img/pages/main_page/plate_dumpling.png</string>
     <string name="imgCabbage">https://www.smakwell.com/img/pages/main_page/categories_icon/stuffed_cabbage.png</string>
+    <string name="imgCabbage2">https://www.smakwell.com/img/pages/stuffed-cabbage_page/stuffed_cabbage.png</string>
     <string name="imgSyrniki">https://www.smakwell.com/img/pages/main_page/categories_icon/syrniki.png</string>
+    <string name="imgSyrniki2">https://www.smakwell.com/img/pages/syrniki_page/plate_syriniki.png</string>
     <string name="imgChebureki">https://www.smakwell.com/img/pages/main_page/categories_icon/chebureki.png</string>
+    <string name="imgChebureki2">https://www.smakwell.com/img/pages/cheburek_page/plate_chebureki.png</string>
     <string name="imgSchnitzel">https://www.smakwell.com/img/pages/main_page/categories_icon/schnitzel.png</string>
+    <string name="imgSchnitzel2">https://www.smakwell.com/img/pages/schnitzel_page/schnitzel.png</string>
     <string name="imgKotletu">https://www.smakwell.com/img/pages/main_page/categories_icon/cutlets.png</string>
+    <string name="imgKotletu2">https://www.smakwell.com/img/pages/cutlets_page/plate_cutlets.png</string>
     <string name="imgKhinkali">https://www.smakwell.com/img/pages/main_page/categories_icon/khinkali.png</string>
+    <string name="imgKhinkali2">https://www.smakwell.com/img/pages/khinkali_page/plate_khinkali.png</string>
     <string name="imgVarenyky">https://www.smakwell.com/img/pages/main_page/categories_icon/vareninki.png</string>
+    <string name="imgVarenyky2">https://www.smakwell.com/img/pages/vareniki_page/plate_vareniki.png</string>
     <string name="imgMlunci">https://www.smakwell.com/img/pages/main_page/categories_icon/pancakes.png</string>
+    <string name="imgMlunci2">https://www.smakwell.com/img/pages/pancakes_page/plate_pancakes.png</string>
     <string name="lula_cebab_descr">З баранини, курдючного сала, цибулі та спецій готують фарш, який
             добре вимішують (близько 15 хвилин) до отримання в\'язкої консистенції. Заправляють спеціями і охолоджують.
             Формують «котлетки», нанизують на шампур і рівномірно розподіляють по ньому. Шампури для люля-кебаб повинні
