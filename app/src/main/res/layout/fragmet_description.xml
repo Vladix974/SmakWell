@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@drawable/img"
     tools:context="com.example.smakwell.DescriptionFragment"
     >
 
 
     <ImageView
+        android:layout_marginTop="15dp"
         android:id="@+id/imglogo"
         android:layout_width="160dp"
         android:layout_height="92dp"
@@ -31,18 +32,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imglogo" />
 
-    <TextView
-        android:id="@+id/tvDescription"
-        android:layout_width="392dp"
-        android:layout_height="233dp"
-        android:layout_marginTop="15sp"
-        android:fontFamily="@font/montserrat_alternates_medium"
-        android:text="@string/bend_descr"
-        android:textColor="@color/white"
-        android:textSize="15sp"
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNameBaking" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNameBaking">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_alternates_medium"
+                android:text="@string/bend_descr"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameBaking" />
+        </LinearLayout>
+    </ScrollView>
 
     <ImageView
         android:id="@+id/imgBake"
@@ -50,6 +68,23 @@
         android:layout_height="208dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView"
         app:srcCompat="@drawable/benderyky_decription" />
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/Widget.Material3.Button.UnelevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/black"
+        android:text="@string/btnText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBake" />
 </androidx.constraintlayout.widget.ConstraintLayout>

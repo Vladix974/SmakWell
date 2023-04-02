@@ -4,6 +4,7 @@ import android.os.Binder
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.smakwell.databinding.FragmetDescriptionBinding
 
@@ -12,6 +13,9 @@ class DescriptionFragment : Fragment(R.layout.fragmet_description) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmetDescriptionBinding.bind(view)
+        binding.btnBack.setOnClickListener {
+            findNavController().popBackStack()
+        }
 
         Glide.with(binding.root)
             .load(R.drawable.logo)
