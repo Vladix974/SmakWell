@@ -32,13 +32,6 @@ class RootFragment : Fragment(R.layout.fragment_root) {
         binding.apply {
             rcBaking.adapter = adapterBake
         }
-        binding.apply {
-
-        }
-    }
-
-    private fun openDescr(name: String) {
-
     }
 
     fun createBaking(): List<Baking> {

@@ -28,6 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imglogo" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcCooking"
         android:layout_width="378dp"
         android:layout_height="485dp"
         app:layout_constraintEnd_toEndOf="parent"
