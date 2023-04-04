@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_root">
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="160dp"
+        android:layout_height="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tvNameBaking"
+        android:layout_width="302dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="@string/benderyky"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imglogo" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="378dp"
+        android:layout_height="485dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:itemCount="2"
+        tools:listitem="@layout/cooking_item"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameBaking" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
