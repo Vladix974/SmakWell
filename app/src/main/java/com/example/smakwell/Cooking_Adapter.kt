@@ -18,6 +18,7 @@ class Cooking_Adapter(): RecyclerView.Adapter<Cooking_Adapter.CookingHolder>() {
             tvNametypebake.text = cook.nameType
             tvCompound.text=cook.compound
             tvCooking.text=cook.cooking
+            tvCinnist.text=cook.cinnict
 
             Glide.with(binding.root)
                 .load(cook.img)

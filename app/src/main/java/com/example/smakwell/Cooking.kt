@@ -7,5 +7,6 @@ data class Cooking(
     val nameType: String,
     val compound: String,
     val cooking: String,
+    val cinnict: String,
     val img: String
 ) :Parcelable
