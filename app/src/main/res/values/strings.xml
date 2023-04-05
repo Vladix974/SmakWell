@@ -94,5 +94,24 @@
         </string>
 
     <string name="bgDescr">https://img.freepik.com/premium-photo/grunge-black-texture-background_49507-868.jpg?w=996</string>
-    <string name="btnText"> Повернутись назад  </string>
+    <string name="btnText"> До рецепту  </string>
+    <string name="btnTextBackMenu"> Повернутися на головне меню </string>
+    <string name="benderukuCooking"> https://smachnota.com.ua/components/com_jshopping/files/img_products/full_foto-benderiki-tvorog-zelen-5.jpg  </string>
+
+    <string name="benderukuName1"> Бендерики "Традиційні" з м\'ясом курки </string>
+    <string name="benderukuimgtype1"> https://znaj.ua/crops/a58eb1/620x0/1/0/2023/02/28/P2vvQV5nT3BewuCsScv1H8soyh6lKA770XevRdQH.png </string>
+    <string name="benderukuCompound1">Тісто: борошно пшеничне в/г, яєчний порошок,  вода питна, цукор, молоко сухе збиране, сіль кухонна.
+
+        Начинка жарена:  м’ясо куряче, шпик хребтовий, цибуля свіжа, соєве борошно текстуроване, сіль, перець, </string>
+    <string name="benderukuCooking1">Заморожені бендерики підсмажують 7 хвилин до золотистої скоринки з олією на пательні, розігрітій до 150-160 ℃.
+   <stong>Не допускається розморожування та повторне заморожування!</stong>
+    </string>
+
+    <string name="benderukuName2"> Бендерики "Ситні" з м\'ясом яловичини та курки </string>
+    <string name="benderukuimgtype2"> https://gordonua.com/img/article/16020/49_big.jpg </string>
+    <string name="benderukuCooking2"> Заморожені бендерики підсмажують 7 хвилин до золотистої скоринки з олією на пательні, розігрітій до 150-160 ℃. Подають зі сметаною.</string>
+    <string name="benderukuCompound2"> Тісто: борошно пшеничне в/г, яєчний порошок, вода питна, цукор, молоко сухе збиране, сіль кухонна.
+
+Начинка смажена: яловичина 1-го ґатунку, м’ясо куряче, шпик хребтовий, цибуля свіжа, соєве борошно текстуроване, сіль, перець, Е- 621. </string>
+
 </resources>

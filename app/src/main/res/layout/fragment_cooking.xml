@@ -4,9 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="com.example.smakwell.CokingFragment"
     android:background="@drawable/bg_root">
 
+    <ImageButton
+        android:id="@+id/imgBtnBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
+        android:layout_marginTop="15dp"
         android:id="@+id/imglogo"
         android:layout_width="160dp"
         android:layout_height="92dp"
@@ -29,12 +43,33 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcCooking"
-        android:layout_width="378dp"
+        android:layout_width="match_parent"
         android:layout_height="485dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:itemCount="2"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
         tools:listitem="@layout/cooking_item"
         app:layout_constraintTop_toBottomOf="@+id/tvNameBaking" />
+
+    <Button
+        android:id="@+id/btnToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.Button.UnelevatedButton"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/btnTextBackMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rcCooking" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

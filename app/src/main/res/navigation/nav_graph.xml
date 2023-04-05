@@ -13,10 +13,22 @@
         <action
             android:id="@+id/action_rootFragment_to_descriptionFragment"
             app:destination="@id/descriptionFragment" />
+        <action
+            android:id="@+id/action_rootFragment_to_cokingFragment2"
+            app:destination="@id/cokingFragment2" />
     </fragment>
     <fragment
         android:id="@+id/descriptionFragment"
         android:name="com.example.smakwell.DescriptionFragment"
         android:label="fragmet_description"
-        tools:layout="@layout/fragmet_description" />
+        tools:layout="@layout/fragmet_description" >
+        <action
+            android:id="@+id/action_descriptionFragment_to_cokingFragment2"
+            app:destination="@id/cokingFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/cokingFragment2"
+        android:name="com.example.smakwell.CokingFragment"
+        android:label="fragment_cooking"
+        tools:layout="@layout/fragment_cooking" />
 </navigation>

@@ -8,5 +8,6 @@ data class Baking(
     val name: String,
     val img: String,
     val desr: String,
-    val img2: String
+    val img2: String,
+    val cookingList: List<Cooking>
 ):Parcelable

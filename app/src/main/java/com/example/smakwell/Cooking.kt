@@ -4,8 +4,8 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Cooking(
-    val name: String,
     val nameType: String,
     val compound: String,
-    val cooking: String
+    val cooking: String,
+    val img: String
 ) :Parcelable

@@ -19,9 +19,9 @@ class Baking_Adapter(
 
         fun bind (bake:Baking) = with(binding){
             tvNameBaking.text=bake.name
-            val url = bake.img
+
             Glide.with(binding.root)
-                .load(url)
+                .load(bake.img)
                 .centerCrop()
                 .into(imgBaking)
 

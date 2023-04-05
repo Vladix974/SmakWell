@@ -4,18 +4,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.smakwell.databinding.CookingItemBinding
 
-class Cooking_Adapter: RecyclerView.Adapter<Cooking_Adapter.CookingHolder>() {
+class Cooking_Adapter(): RecyclerView.Adapter<Cooking_Adapter.CookingHolder>() {
     private val list= ArrayList<Cooking>()
 
     inner class CookingHolder(item: View): RecyclerView.ViewHolder(item){
         val binding = CookingItemBinding.bind(item)
 
         fun bind (cook: Cooking) = with(binding){
-            tvNameTypeBake.text = cook.name
+            tvNametypebake.text = cook.nameType
             tvCompound.text=cook.compound
             tvCooking.text=cook.cooking
+
+            Glide.with(binding.root)
+                .load(cook.img)
+                .fitCenter()
+                .into(imgBake)
         }
     }
 
@@ -32,9 +39,9 @@ class Cooking_Adapter: RecyclerView.Adapter<Cooking_Adapter.CookingHolder>() {
        holder.bind(list[position])
     }
 
-    fun addTypeBake(newList: List<Cooking>){
+    fun addTypeBake(newList: List<Cooking>?){
         list.clear()
-        list.addAll(newList)
+        list.addAll(newList!!)
         notifyDataSetChanged()
     }
 }
